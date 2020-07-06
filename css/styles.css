@@ -1,0 +1,43 @@
+/* General and Mobile Responsive Styles (320px and up) */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3em;
+}
+input {
+  font-size: 16px;
+  margin-bottom: 2em;
+  height: 2em;
+  padding: 10px;
+  margin: 0 auto;
+ }
+.inner-wrapper {
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mobile Responsive Styles (768px and up) */
+@media only screen and (min-width: 768px) {
+ .inner-wrapper {
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  }
+  input {
+    width: 40%;
+  }
+}
+
+/* Mobile Responsive Styles (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  .wrapper {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
