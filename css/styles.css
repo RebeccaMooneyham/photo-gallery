@@ -21,6 +21,10 @@ input {
   align-items: center;
   justify-content: center;
 }
+.inner-wrapper img {
+  margin: 1.5em;
+}
+
 
 /* Mobile Responsive Styles (768px and up) */
 @media only screen and (min-width: 768px) {
@@ -37,7 +41,7 @@ input {
 /* Mobile Responsive Styles (1024px and up) */
 @media only screen and (min-width: 1024px) {
   .wrapper {
-    max-width: 1200px;
+    max-width: 1144px;
     margin: auto;
   }
 }
