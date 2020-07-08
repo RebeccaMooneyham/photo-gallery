@@ -10,13 +10,12 @@ function search_photos() {
     let imageLink = images[i]; 
     let caption = imageLink.getAttribute('data-title');
     caption = caption.toLowerCase();
-    console.log(caption);
   
     //  Check if variable input is included in the captions and if so, display the image(s)
     if (caption.includes(input)) {
-      imageLink[i].style.display = 'block';
+      imageLink.style.display = 'block';
     } else {
-      imageLink[i].style.display = 'none';
+      imageLink.style.display = 'none';
     }
   }
 }
